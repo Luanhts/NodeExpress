@@ -1,10 +1,11 @@
 const express = require('express');
 const app = express();
+const porta = 3333;
 
 app.get('/', (req, res) => {
-    res.send("Salveee");
+    res.send("Salve opa");
 });
 
-app.listen(3333, () => {
-    console.log(`Seu server iniciou na porta http://localhost:3333`)
+app.listen(porta, () => {
+    console.log(`Seu server iniciou na porta http://localhost:${porta}`)
 })
